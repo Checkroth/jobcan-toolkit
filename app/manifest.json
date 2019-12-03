@@ -1,0 +1,16 @@
+{
+  "name": "Jobcan Toolkit",
+  "version": "0.1.0",
+  "description": "Additions to jobcan page for ease-of-understanding and planning",
+	"icons": {
+		"128": "128.png"
+	},
+  "permissions": [
+		"activeTab"
+  ],
+  "content_scripts": [{
+		"js": ["ui-toolkit.js"],
+		"matches": ["https://ssl.jobcan.jp/employee/attendance*"]
+  }],
+  "manifest_version": 2
+}
